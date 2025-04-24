@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "compile": "hardhat compile",
+    "deploy": "hardhat deploy",
     "test": "hardhat test test/unit/*_test.js --network hardhat",
     "test-staging": "hardhat test test/staging/*_test.js --network goerli",
     "lint": "solhint 'contracts/*.sol'",
@@ -13,7 +14,6 @@
     "fuzzing": "docker run -it --rm -v $PWD:/src trailofbits/eth-security-toolbox"
   },
   "license": "MIT",
-  "devDependencies": {},
   "dependencies": {
     "@glif/filecoin-address": "^2.0.43",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
